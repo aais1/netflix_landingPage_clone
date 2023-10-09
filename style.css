@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+::placeholder{
+  padding: 20px;
+}
+
+.bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.671)),
+    url(assets/logo.jpg);
+  background-size: auto;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+}
+
+.logo {
+  color: red;
+  font-size: 36px;
+  font-weight: 900;
+  margin-left: 10%;
+}
+
+.bt-1 {
+  background-color: #e50914;
+  border: none;
+  padding: 4px 16px;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-right: 10%;
+  height: 32px;
+  width: 82px;
+}
+
+.bt-1:hover {
+  background-color: rgb(145, 8, 8);
+  cursor: pointer;
+}
+
+#bt-2 {
+  background-color: #e50914;
+  border: 0.5px solid rgba(211, 211, 211, 0);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+  width: 150px;
+  height: 50px;
+  border-radius: 3px;
+}
+
+#bt-2:hover {
+  background-color: rgb(145, 8, 8);
+  cursor: pointer;
+}
+
+.welcome {
+  display: block;
+  margin-top: 180px;
+}
+
+.welcome h1 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.3rem;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.email-enter {
+  text-align: center;
+  padding: 20px;;
+}
+
+input {
+  width: 30%;
+  height: 50px;
+  background-color: transparent;
+  border: 0.5px solid rgba(211, 211, 211, 0.527);
+  border-radius: 3px;
+  color: white;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+hr {
+  width: 100%;
+  height: 5px;
+  background-color: rgb(41, 39, 39);
+  border: none;
+}
+
+.tv {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 540px;
+}
+
+.tv-content {
+  color: white;
+  padding: 120px;
+}
+
+.tv-content h1 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.tv img {
+  height: 100%;
+  width: 500px;
+  margin-right: 60px;
+}
+
+.movie {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 540px;
+}
+
+.movie-content {
+  color: white;
+  padding: 60px;
+  text-align: left;
+}
+
+.movie-content h1 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.movie img {
+  height: 100%;
+  width: 530px;
+  margin-left: 120px;
+}
+
+.kids {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 540px;
+}
+
+.kids-content {
+  color: white;
+  padding: 60px;
+  text-align: left;
+}
+
+.kids-content h1 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.kids img {
+  height: 100%;
+  width: 530px;
+  margin-left: 120px;
+}
+
+h3 {
+  font-size: medium;
+  font-weight: lighter;
+  font-size: 26px;
+}
+
+#accord-header {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*For Responsiveness!!*/
+@media (max-width: 960px) {
+  .email-enter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  #bt-2 {
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    font-size: 32px;
+    margin-right: 10%;
+  }
+
+  .welcome {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .welcome h1 {
+    font-size: 2rem;
+    padding: 2%;
+  }
+
+  .welcome p {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 35px;
+  }
+
+  .tv {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+  }
+
+  .movie {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    height: 100vh;
+  }
+
+  .kids {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    height: 100vh;
+  }
+
+  hr {
+    width: 96.5vw;
+  }
+
+  .bg {
+    min-height: 80vh;
+  }
+
+  .tv h1 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 2.1rem;
+    font-weight: bolder;
+    margin-bottom: 2px;
+    margin-top: 5px;
+  }
+
+  .tv h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 3px;
+  }
+
+  .tv img {
+    display: block;
+    margin: auto;
+    height: 90%;
+    width: 90%;
+    padding-bottom: 10%;
+  }
+
+  .movie-content h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 2px;
+  }
+
+  .movie-content h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+  }
+
+  .movie img {
+    display: block;
+    margin: auto;
+    height: 90%;
+    width: 90%;
+    padding-bottom: 10%;
+  }
+
+  .kids-content h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 2px;
+  }
+
+  .kids-content h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+  }
+
+  .kids img {
+    display: block;
+    margin: auto;
+    height: 90%;
+    width: 90%;
+    padding-bottom: 10%;
+  }
+
+  #accord-header {
+    font-size: 1.5rem;
+  }
+
+  #footer-header {
+    font-size: 1.2rem;
+    margin: 10%;
+  }
+  .foot{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1280px) {
+  .tv-content {
+    padding: 10px;
+  }
+
+  .kids-content {
+    padding: 10px;
+  }
+
+  .movies-content {
+    padding: 10px;
+  }
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  text-align: left;
+  border: none;
+  display: block;
+  margin: auto;
+  justify-content: space-between;
+  font-size: larger;
+  font-weight: 700;
+  color: white;
+  height: 17%;
+  width: 75%;
+  margin: auto;
+  background-color: rgb(41, 39, 39);
+  margin-bottom: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: rgb(66, 63, 63);
+}
+
+.acc {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  margin: auto;
+  padding: 1.5%;
+  margin-bottom: 10px;
+  background-color: rgb(41, 39, 39);
+  display: none;
+  overflow: hidden;
+  height: 25%;
+  width: 75%;
+  transition: 1s;
+}
+
+.panel p {
+  text-align: left;
+}
+
+.accordion span {
+  float: right;
+}
+
+.email-enter {
+  margin-bottom: 30px;
+}
+
+#footer-header {
+  color: white;
+  text-align: center;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  padding: 3%;
+}
+
+footer p {
+  color: #ffffffa1;
+  margin-bottom: 20px;
+  margin-top: 3px;
+  text-decoration: underline;
+}
+
+.foot {
+  display: flex;
+  color: #ffffffa1;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 50px;
+  margin-left: 20%;
+}
+
+ul li {
+  list-style: none;
+  text-decoration: underline;
+  margin-bottom: 15px;
+  margin-right: 180px;
+}
+
+ul li:hover{
+    cursor: pointer;
+  }
+
+  footer p:hover{
+    cursor:pointer
+  }
+
+#netflix-foot{
+    margin-top: 20px;;
+    color:#ffffffa1;
+    font-size: medium;
+}
